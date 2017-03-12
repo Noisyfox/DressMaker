@@ -1,0 +1,9 @@
+﻿<Application x:Class="DressMaker.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DressMaker"
+             StartupUri="ui/MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
