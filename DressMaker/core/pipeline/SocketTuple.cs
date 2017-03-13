@@ -45,8 +45,8 @@ namespace DressMaker.core.pipeline
 
             return
                 Type == o.Type
-                && SourceAddress == o.SourceAddress
-                && DestinationAddress == o.DestinationAddress
+                && SourceAddress.Equals(o.SourceAddress)
+                && DestinationAddress.Equals(o.DestinationAddress)
                 && SourcePort == o.SourcePort
                 && DestinationPort == o.DestinationPort;
         }
