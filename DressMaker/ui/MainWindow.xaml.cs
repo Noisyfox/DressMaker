@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DressMaker.core.input;
+using DressMaker.core.pipeline;
 using Microsoft.Win32;
 
 namespace DressMaker
@@ -36,7 +38,11 @@ namespace DressMaker
             dialog.Filter = "Wireshark/tcpdump (*.pcap)|*.pcap|All files(*.*)|*.*";
             if (dialog.ShowDialog() == true)
             {
-//                var inputDevice = new SharpPcap.LibPcap.CaptureFileReaderDevice("");
+                var input = new MultiFileInput(dialog.FileNames);
+                new PipeLine
+                {
+                    PacketInput = input
+                }.Start();
             }
         }
     }

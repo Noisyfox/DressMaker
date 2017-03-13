@@ -73,7 +73,13 @@
     </Compile>
     <Compile Include="core\input\IPacketInput.cs" />
     <Compile Include="core\input\MultiFileInput.cs" />
+    <Compile Include="core\pipeline\IPacketCollector.cs" />
     <Compile Include="core\pipeline\PipeLine.cs" />
+    <Compile Include="core\pipeline\SocketTuple.cs" />
+    <Compile Include="core\pipeline\tcp\TcpCollector.cs" />
+    <Compile Include="core\pipeline\tcp\TcpSeq.cs" />
+    <Compile Include="core\TimePacket.cs" />
+    <Compile Include="core\Utils.cs" />
     <Compile Include="ui\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
