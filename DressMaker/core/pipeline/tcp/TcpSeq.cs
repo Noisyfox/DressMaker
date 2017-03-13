@@ -8,9 +8,9 @@ namespace DressMaker.core.pipeline.tcp
 {
     public class TcpSeq
     {
-        public SocketTuple SocketIdent { get; }
+        public TcpTuple SocketIdent { get; }
 
-        public TcpSeq(SocketTuple socketIdent)
+        public TcpSeq(TcpTuple socketIdent)
         {
             SocketIdent = socketIdent;
         }
